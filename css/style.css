@@ -1,0 +1,65 @@
+.wrapper {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.menu {
+  position: sticky;
+  top: 0; 
+  font-family: "Unbounded", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: white;
+  padding: 10px 0;
+  text-align: center;
+    
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+
+.name {
+  font-family: "Unbounded", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+.undername {
+  font-family: "Unbounded", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
+#about { background: #f8c6c6; padding: 40px; border-radius: 15px; }
+#portfolio { background: #c2ffa5; padding: 40px; border-radius: 15px;}
+#fact { background:  #fde68a; padding: 40px; border-radius: 15px; }
+
+
+.toTop {
+  position: fixed;   
+  bottom: 20px;     
+  right: 20px;     
+  padding: 10px 15px;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  font-family: "Unbounded", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
