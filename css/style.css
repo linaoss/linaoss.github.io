@@ -1,65 +1,189 @@
+body {
+  margin: 0;
+  font-family: "Unbounded", sans-serif;
+  background-color: #fffafc;
+  color: #333;
+}
+
 .wrapper {
-    margin: 0 auto;
-    width: 800px;
+  margin: 0 auto;
+  width: 800px;
+  padding: 20px;
 }
 
 .menu {
   position: sticky;
-  top: 0; 
-  font-family: "Unbounded", sans-serif;
+  top: 0;
+  background-color: #ffffffcc;
+  backdrop-filter: blur(8px);
+  padding: 10px 40px;
+  z-index: 1000;
+  border-bottom: 1px solid #f0dcdc;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: #444;
+  margin-right: 20px;
   font-size: 15px;
   font-weight: 500;
-  background-color: white;
-  padding: 10px 0;
-  text-align: center;
-    
+  transition: color 0.3s, transform 0.3s;
 }
 
-.menu a {
-  text-decoration: none;
-  color: black;
-  margin: 0 10px;
+.nav-left a:hover {
+  color: #ff9cb8;
+  transform: translateY(-2px);
 }
 
-.menu a:hover {
-  text-decoration: underline;
+.logo {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
 }
 
+.logo:hover {
+  transform: rotate(10deg) scale(1.05);
+}
 
 .name {
-  font-family: "Unbounded", sans-serif;
   font-size: 50px;
   font-weight: 700;
   text-align: center;
-  margin: 20px 0;
+  margin: 30px 0 10px;
+  color: #333;
 }
-
 
 .undername {
-  font-family: "Unbounded", sans-serif;
   font-size: 25px;
   font-weight: 600;
-  margin: 20px 0 10px;
   text-align: center;
+  margin-bottom: 30px;
+  color: #666;
 }
 
-#about { background: #f8c6c6; padding: 40px; border-radius: 15px; }
-#portfolio { background: #c2ffa5; padding: 40px; border-radius: 15px;}
-#fact { background:  #fde68a; padding: 40px; border-radius: 15px; }
+section {
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#about {
+  background: #ffe4e9;
+}
+
+#about {
+  background: #ffe4e9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 8%;
+}
+
+#about img {
+  width: 38%; /* менше зображення */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#about div {
+  width: 70%; /* ширший текстовий блок */
+}
+
+#about p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px; /* або навіть 1100px */
+  padding: 20px;
+}
+
+
+#portfolio {
+  background: #e3ffe1;
+}
+
+#fact {
+  background: #fff7c2;
+}
+
 
 
 .toTop {
-  position: fixed;   
-  bottom: 20px;     
-  right: 20px;     
-  padding: 10px 15px;
-  background: black;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #ffb6c1;
   color: white;
-  border-radius: 5px;
-  font-family: "Unbounded", sans-serif;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   font-size: 25px;
-  font-weight: 600;
-  margin: 20px 0 10px;
-  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: background 0.3s, transform 0.3s;
 }
 
+.toTop:hover {
+  background: #ff9cb8;
+  transform: translateY(-4px);
+}
+
+/* Портфоліо — 3 картки в ряд */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.portfolio-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 230px; /* фіксована ширина, щоб улізло 3 штуки */
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border: 2px solid #ff9cb8;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.portfolio-item h3 {
+  padding: 8px 12px 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+.portfolio-item p {
+  padding: 0 12px 12px;
+  font-size: 13px;
+  color: #666;
+}

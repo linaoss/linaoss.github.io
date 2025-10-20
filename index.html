@@ -1,154 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Опис / description веб сторінки">
-    <meta property="og:image" content="https://raw.githubusercontent.com/linaoss/linaoss.github.io/refs/heads/main/img/og-image.jpg"><!-- full URL to image-->
-     
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <meta property="og:image" content="https://raw.githubusercontent.com/linaoss/linaoss.github.io/refs/heads/main/img/og-image.jpg">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Сайт</title>
-    
-
-
-    
 </head>
-<a href="#top" class="toTop">Вгору</a>
 
 <body>
-    
+  
+  <header class="menu">
+    <nav class="nav">
+      <div class="nav-left">
+        <a href="#about">Про мене</a>
+        <a href="#portfolio">Портфоліо</a>
+        <a href="#fact">Цікавий факт</a>
+        <a href="#contact">Контакти</a>
+      </div>
+      <div class="nav-right">
+        <img src="img/—Pngtree—simple pink heart isolated_13399506.png" alt="Логотип" class="logo">
 
+      </div>
+    </nav>
+  </header>
 
-<div class="wrapper">
-     
+  
+  <button class="toTop" id="toTopBtn">↑</button>
+
+  <div class="wrapper">
+
     <div class="name">Сайт Ангеліни Осауленко</div>
 
-  <nav class="menu"> 
-    <a href="#about">Про мене</a> |
-    <a href="#portfolio">Портфоліо</a> |
-    <a href="#fact">Цікавий факт</a> |
-    <a href="#contact">Контакти</a>
-  </nav>
-
-   <section id="about">
-    <p class="undername">Про мене</p>
-    <p>Ласкаво просимо на сайт!</p>
-    <p>Мене, як ви вже мабуть зрозуміли, звати - Ангеліна, <br> я вчусь на 4 курсі графічного дизайну в Труша, а також цікавлюсь фотографією</p>
-    <img src="img/WIN_20250409_13_50_17_Pro.jpg" alt="">
-  </section>
+    <section id="about">
+      <p class="undername">Про мене</p>
+      
+      <p>Мене, як ви вже мабуть зрозуміли, звати - Ангеліна, <br> я вчусь на 4 курсі графічного дизайну в Труша, а також цікавлюсь фотографією</p>
+      <img src="img/WIN_20250409_13_50_17_Pro.jpg" alt="">
+    </section>
 
     <section id="portfolio">
-    <p class="undername">Портфоліо</p>
-    <p>Ось деякі приклади моїх робіт</p>
-    <img src="img/розворот4.jpg" width="300" alt=""> 
-    <img src="img/zinArtboard-6.png" width="300" alt="">
-    <img src="img/OATS_Bag_Mockup.png" width="300" alt="">
-    <img src="img/листівка 2.jpg" width="300" alt="">
-  </section>
+  <p class="undername">Портфоліо</p>
+  <p>Ось деякі приклади моїх робіт</p>
+
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <img src="img/comics.jpg" alt="">
+      <h3>Журнал</h3>
+      <p>Розворот із навчального проєкту</p>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="img/zinArtboard-6.png" alt="">
+      <h3>Зін</h3>
+      <p>Дизайн сторінки</p>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="img/OATS_Bag_Mockup.png" alt="">
+      <h3>Пакування</h3>
+      <p>Макет для бренду OATS</p>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="img/zin.jpg" alt="">
+      <h3>Колаж</h3>
+      <p>Фотоколаж зі своїх робіт</p>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="img/list.jpg" alt="">
+      <h3>Листівка</h3>
+      <p>Авторська ілюстрація</p>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="img/sc5.jpg" alt="">
+      <h3>Лого</h3>
+      <p>Робота з айдентикою</p>
+    </div>
+  </div>
+</section>
 
 
 
- <section id="fact"> 
-    <div>Цікавий факт, який би я хотіла про себе розповісти - <br>нещодавно я стала <i>водієм категорії B!!! </i> </div>
 
-    <p class="undername"> Фотопідтвердження цього факту -</p>
-    <img src="img/photo_2025-09-15_22-26-05.jpg" width="300" alt="">
-    <p><b>(Прошу звернути увагу, на механіці!!)</b></p>
+    <section id="fact"> 
+      <div>Цікавий факт, який би я хотіла про себе розповісти - <br>нещодавно я стала <i>водієм категорії B!!! </i> </div>
 
-    <div class="undername">Які привілеї мені це дало?</div>
+      <p class="undername"> Фотопідтвердження цього факту -</p>
+      <img src="img/photo_2025-09-15_22-26-05.jpg" width="300" alt="">
+      <p><b>(Прошу звернути увагу, на механіці!!)</b></p>
 
-    <ol>
-        <li>
-           <b>тепер я відчуваю себе краще за простих смертних пішоходів</b> 
-        </li>
+      <div class="undername">Які привілеї мені це дало?</div>
 
-        <li>
-            <b>я можу сісти за кермо будь якого легкового авто(ні)</b>
-        </li>
-    
-        <li>
-            <b>можу засуджувати те, як водять інші</b>
-        </li>
-       
-        <li>
-            <b>використання фрази - "Права купили, їздити не купили"</b>
-        </li>
-
-    </ol>
+      <ol>
+          <li><b>тепер я відчуваю себе краще за простих смертних пішоходів</b></li>
+          <li><b>я можу сісти за кермо будь якого легкового авто(ні)</b></li>
+          <li><b>можу засуджувати те, як водять інші</b></li>
+          <li><b>використання фрази - "Права купили, їздити не купили"</b></li>
+      </ol>
    
-    
-    <div class="undername">Які є мінуси?</div>
-
-    <ul>
-        <li>
-            <b>продовжую їздити на громадському транспорті</b>
-        </li>
-
-        <li>
-            <b>не вмію паркуватись</b>
-        </li>
-    
-       
-    </ul>
-
- </section>
+      <div class="undername">Які є мінуси?</div>
+      <ul>
+          <li><b>продовжую їздити на громадському транспорті</b></li>
+          <li><b>не вмію паркуватись</b></li>
+      </ul>
+    </section>
 
     <img src="img/77bbf958dead2dafeda20de272fe3c7d.jpg" alt="">
 
+    <section id="contact">
+      <h3>Якщо ви теж хочете досягнути такого неймовірного успіху як я - <br> ви знаєте де мене можна знайти</h3>
+      <h3>(в тролейбусі)</h3>
 
-
- <section id="contact">
-
-    <h3>Якщо ви теж хочете досягнути такого неймовірного успіху як я - <br> ви знаєте де мене можна знайти</br>
-
-    </h3>
-    <h3>(в тролейбусі)</h3>
-
-     <a href="https://www.instagram.com/lina._os/" target="_blank">
-
+      <a href="https://www.instagram.com/lina._os/" target="_blank">
         <img src="img/instagram-logo_971166-164497.jpg" width="100" alt="">
+      </a>
 
-     </a>
-
-     <a href="https://www.behance.net/anhelinosaulen" target="_blank">
-
+      <a href="https://www.behance.net/anhelinosaulen" target="_blank">
         <img src="img/free-behance-icon-2161-thumb.png" width="100" alt="">
+      </a>
 
-     </a>
-
-    <a href="https://www.pinterest.com/angelinaintel78/" target="_blank">
-
+      <a href="https://www.pinterest.com/angelinaintel78/" target="_blank">
         <img src="img/App-Pinterest-icon.png" width="100" alt="">
+      </a>
 
-     </a>
-
-     <a href="https://www.tiktok.com/@charivn" target="_blank">
-
+      <a href="https://www.tiktok.com/@charivn" target="_blank">
         <img src="img/3116491.png" width="100" alt="">
+      </a>
 
-     </a>
+      <a href="https://www.instagram.com/lina._os/" target="_blank">
+        <h2>@lina._os</h2>
+      </a>
+    </section>
+  </div>
 
-     <a href="https://www.instagram.com/lina._os/" target="_blank">
+  <script>
+    const toTopBtn = document.getElementById("toTopBtn");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        toTopBtn.style.opacity = "1";
+        toTopBtn.style.pointerEvents = "auto";
+      } else {
+        toTopBtn.style.opacity = "0";
+        toTopBtn.style.pointerEvents = "none";
+      }
+    });
 
-
-
-      <h2>@lina._os</h2>
-
-     </a>
-
- </section>
-    
-
-
-
-
-
-
-</div>
+    toTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </body>
 </html>
