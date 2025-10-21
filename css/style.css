@@ -123,6 +123,22 @@ section:hover {
   background: #fff7c2;
 }
 
+#fact img,
+section#contact img:first-of-type {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.wrapper > img {
+  display: block;
+  margin: 0 auto 40px; /* по центру + відступ знизу */
+  max-width: 100%;
+  border-radius: 15px; /* за бажанням */
+}
+
+
+
 
 
 .toTop {
